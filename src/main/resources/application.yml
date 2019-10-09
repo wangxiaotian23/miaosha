@@ -1,0 +1,14 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost/miaosha?useSSL=false&serverTimezone=UTC
+    username: root
+    password: 123456
+  thymeleaf:
+    cache: false
+mybatis:
+  configuration:
+    map-underscore-to-camel-case: true
+  type-aliases-package: com.imooc.miaosha.domain
+debug: true
+logging.level.org.springframework.boot.autoconfigure: ERROR
